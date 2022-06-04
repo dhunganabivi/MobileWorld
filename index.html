@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Mobile World </title>
+<meta charset="utf-8">
+<meta name ="viewport" content-type="width=device-width intial-scale = 1">
+<link rel="icon" href="images/logo.jpg" sizes="16*16">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Css for slideshow -->
+<style type="text/css">
+	
+#container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+ overflow-x: hidden;
+}
+
+#slideshow {
+		padding: 0 0px;
+    width: 110%;
+    height: 550px;
+    overflow: hidden;
+    padding-top: 0px;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  
+  float: left;
+  width: 100%;
+  border: 0;
+  height: 500px;
+  }
+</style>
+<!-- Ending of css for slideshow -->
+
+
+<script src="javascript/jquery.js"> </script>
+<script src="javascript/custom.js"> </script>
+ <script src="javascript/responsiveslides.min.js"></script>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('ul').toggleClass('active');
+		})
+	})
+</script>
+
+
+
+
+</head>
+<body>
+
+	<!-- Main div -->
+	<div id ="main ">
+
+		<!-- Header start -->
+		
+			<div id = "header">
+			<div id ="logo">
+        <figure>
+				<a href="#"> <img src="images/logo.jpg"> </a>
+        </figure>
+				<a class="toggle"> Menu  </a>
+      </div>
+<ul>
+
+ 	        <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="brands.html"> Brands </a> </li>
+          <li> <a href="Categories.html"> Categories </a> </li>
+          <li> <a href="Offers.html"> Offers </a> </li>
+          <li> <a href="aboutus.html"> About </a> </li>
+          <li> <a href="contactus.html"> Contact </a> </li>
+
+
+ 	
+ </ul>
+
+	</div>
+
+
+	<!-- Header close -->
+
+<!-- Container Start -->
+	<div id ='container'>
+
+		<div id ='slideshow'> 
+
+       <ul class="rslides">
+     
+        <li><img src="images/602.jpeg" alt=""></li>
+       <li><img src="images/600.jpg" alt=""></li>
+         <li><img src="images/601.jpeg" alt=""></li>
+          </ul>
+
+
+		</div>
+		<div id ="About Mobbiles">
+      <div class="box">
+          <img src="./images/700.jpeg">
+          <h3>Samsung S10(Prism White)<br>
+          (128 GB,8 GB RAM)</h3>
+          <p>One of the highest selling mobile phones</p>
+        </div>
+        <div class="box">
+          <img src="./images/643.jpeg">
+          <h3>Huavei nova 3i<br>
+          (Black 128 Gb)</h3>
+          <p>One of the highest selling mobile phones</p>
+        </div>
+        <div class="box">
+          <img src="./images/702.jpeg">
+          <h3>OPPO Reno2 Z (Sky White)<br>
+          (256 GB,8 GB RAM)</h3>
+          <p>One of the highest selling mobile phones</p>
+        </div>
+		 </div>
+	<div id ="about"> 
+    <article id="main-col">
+          <h1 class="page-title">About Us</h1>
+          <p>
+            MobileWorld is an website based in Kathmandu, Nepal. Since the designing of this website, it provides information about the various types of mobile phones and their features in Nepal, India, Tibet, and Bhutan.
+          </p>
+          <p class="dark">
+            MobileWorld is a single owned website managed by  Bivishan Dhungana. 
+          </p>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Technology World</h3>
+            <p>“Choose by your all heart.” – Bivishan Dhunagan</p>
+          </div>
+        </aside>
+		</div>
+
+
+		<div id ="package"> 
+         <h1 class="package-title">SPECIAL BRANDS</h1>
+         <div id ="wholebox">
+         <div class="box">
+          <img src="images/615.jpg">
+          <h3>Samsung galaxy S9<br>(Coral Blue,64 GB)(6 GB RAM)</h3>
+         
+        </div>
+        <div class="box">
+          <img src="images/618.jpg">
+          <h3>Vivo y81i<br>(Red,64 GB)(6 GB RAM)</h3>
+         
+        </div>
+        <div class="box">
+          <img src="images/621.jpg">
+          <h3>HTC one<br> (Silver,32 GB)(3 GB RAM)</h3>
+         
+        </div>
+        <div class="box">
+          <img src="images/630.jpg">
+          <h3>Xiami Redmi 7<br>(Comet black,32 GB)(2 GB RAM)</h3>
+          
+        </div>
+        <div class="box">
+          <img src="images/634.jpg">
+          <h3>One+ 6T<br> (Mirror black,128 GB)(6 GB RAM)</h3>
+          
+        </div>
+        <div class="box">
+          <img src="images/632.jpg">
+          <h3>Nokia 9<br> (Blue,128 GB)(6 GB RAM)</h3>
+       
+        </div>
+
+    </div>
+</div>
+
+<canvas id="myCanvas" width="1400" height="300" style="border:10px solid 	#B0E0E6;">
+<h1> Be Smart With Smart Phones</h1>
+	</canvas>
+   
+<div id ="footer" > 
+	
+<div class="footer-social-icons">
+
+<ul>
+	<li> <a href="#" target="blank"> <i class ="fa fa-facebook"> </i> </a></li>
+	<li> <a href="#" target="blank"> <i class ="fa fa-twitter"> </i> </a></li>
+	<li> <a href="#" target="blank"> <i class ="fa fa-google-plus"> </i> </a></li>
+	<li> <a href="#" target="blank"> <i class ="fa fa-youtube"> </i> </a></li>
+</ul>
+</div>
+<div class="footer-menu-one">
+<ul>
+
+          <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="brands.html"> Brands </a> </li>
+          <li> <a href="Categories.html"> Categories </a> </li>
+          <li> <a href="Offers.html"> Offers </a> </li>
+          <li> <a href="aboutus.html"> About </a> </li>
+          <li> <a href="contactus.html"> Contact </a> </li>
+</ul>
+	</div>
+<div class="footer-bottom">
+  <p> Design by: <a href="#"> Bivishan Dhunagana </a> </p>
+  </div>   
+	</div>  
+</div>
+ <!-- Container close -->
+</div>
+<!-- Main div closed -->
+
+
+<!-- Add slideshow Js and css files -->
+
+<script>
+$(document).ready(function(){
+    $(".rslides").responsiveSlides();
+  });
+  </script>
+
+<!---Add slideshow js and css files ends -->
+
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.font = "30px Arial";
+
+ctx.strokeText("BE SMART WITH THE SMART PHONES.",500,50);
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Mobile World</title>
+<meta charset="utf-8">
+<meta name ="viewport" content-type="width=device-width intial-scale = 1">
+<link rel="icon" href="images/logo.jpg" sizes="16*16">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nepal.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="javascript/jquery.js"> </script>
+<script src="javascript/custom.js"> </script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#subject").hide();
+         $("label").hide();
+    });
+    $("#show").click(function(){
+        $("#subject").show();
+         $("label").show();
+    });
+});
+</script>
+   <script type = "text/javascript">
+/* for checking local storage is working or not 
+
+for storing form data in brower storage via local storage*/
+function save(){
+
+    localStorage.firstname = document.getElementById('fname').value;
+    localStorage.lastname = document.getElementById('lname').value;
+localStorage.country = document.getElementById('countrie').value;
+localStorage.subjects = document.getElementById('subject').value;
+}
+
+/* for displaying stored form data 
+*/
+
+</script>
+
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('ul').toggleClass('active');
+        })
+    })
+</script>
+
+<style>
+h1{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 20px;
+}
+</style>
+</head>
+<body onload="getlocalstorage()">
+  
+  <!-- main div start -->
+<div id ="main ">
+
+    <!-- Header start -->
+    
+      <div id = "header">
+<!--logo start -->
+      <div id ="logo">
+        <a href="#"> <img src="images/logo.jpg"> </a>
+        <a class="toggle"> Menu  </a>
+      </div>
+<!-- logo close -->
+
+ <ul>
+
+          <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="brands.html"> Brands </a> </li>
+          <li> <a href="Categories.html"> Categories </a> </li>
+          <li> <a href="Offers.html"> Offers </a> </li>
+          <li> <a href="aboutus.html"> About </a> </li>
+          <li> <a href="contactus.html"> Contact </a> </li>
+  
+ </ul>
+</div>
+<!-- Header close -->
+
+<!-- Container start -->
+
+<div id="container">
+ <div id="Information">
+<div class="item-body">
+                      
+                                    <h1 class="text">CONTACT US</h1>
+
+
+                                    <p id="first">
+                                      Passage Nepal Pvt. Ltd. <br> <br>
+
+P.O.Box: 21856, Mobile Marg, Thamel <br> <br>
+Phone no.: +977-14701674 <br> <br>
+
+Fax no.: +977-14700154 <br><br>
+
+Mobile: +977-9860934981 (Bivishan dhungana) <br><br>
+
+E-mail: mobileworld@mos.com.np 
+
+                                    </p>
+
+                                 
+                  
+
+ </div>
+ </div>
+
+</div>
+<!-- Container Close -->
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="querysubmit.html">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" required="" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" required="" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="countrie" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="Uk">United Kingdom</option>
+      <option value="china">China</option>
+      <option value="thailand">Thailand</option>
+      <option value="France">France</option>
+       <option value="Germany">Germany</option>
+
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subjects" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" onclick="save()">
+    <button id="hide">Hide Subject </button>
+<button id="show">Show Subject </button>
+    <!--<span id="span1"></span> -- >
+  </form>
+</div>
+
+
+                                              
+                  
+
+ </div>
+ </div>
+
+</div>
+<!-- Container Close -->
+
+<!-- Footer  start -->
+
+ <div id ="footer" > 
+  
+<div class="footer-social-icons">
+
+<ul>
+  <li> <a href="#" target="blank"> <i class ="fa fa-facebook"> </i> </a></li>
+  <li> <a href="#" target="blank"> <i class ="fa fa-twitter"> </i> </a></li>
+  <li> <a href="#" target="blank"> <i class ="fa fa-google-plus"> </i> </a></li>
+  <li> <a href="#" target="blank"> <i class ="fa fa-youtube"> </i> </a></li>
+</ul>
+</div>
+<div class="footer-menu-one">
+<ul>
+          <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="brands.html"> Brands </a> </li>
+          <li> <a href="Categories.html"> Categories </a> </li>
+          <li> <a href="Offers.html"> Offers </a> </li>
+          <li> <a href="aboutus.html"> About </a> </li>
+          <li> <a href="contactus.html"> Contact </a> </li>
+
+</ul>
+
+
+
+  </div>
+
+</div>
+<!-- Footer  close-->
+
+<!-- Footer bottom start  -->
+<div class="footer-bottom">
+  <p> Design by: <a href="none"> Bivishan Dhunagan </a> </p>
+  </div>
+
+  <!-- Footer bottom close -->
+  </div>
+
+  <!-- main div close  -->
+
+</body>
+</html>
